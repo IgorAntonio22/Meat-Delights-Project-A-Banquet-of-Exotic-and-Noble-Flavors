@@ -1,0 +1,40 @@
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .checkbox, #todasAsOpcoes {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkbox.selected {
+    background-color: #2196F3;
+    border: 2px solid #2196F3;
+  }
+  
+  .checkbox-description {
+    margin: 0;
+  }
+  
+  .checkbox.selected + .checkbox-description p {
+    font-weight: bold;
+    color: #2196F3;
+  }
+
+  .checkbox img, #todasAsOpcoes img {
+    display: none;
+  }
+
+  .display-block {
+    display: block;
+  }

@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&display=swap');
+
+/* 1rem = 10px */
+:root {
+    font-size: 10px;
+}
+
+html {
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: 120rem;
+    height: 40rem;
+    background-color: grey;
+}
+
+/* Header Início */
+h1 {
+    text-align: center;
+    font-size: 8rem;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    width: 30rem;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.busca {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+}
+
+.iconeLupa {
+    background-image: url('svg/search.svg');
+    width: 20rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+    
+}
+
+.navbar {
+    width: 100%;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar ul li {
+    padding-left: 7rem;
+    
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+
+.a:hover {
+    text-decoration: none;
+    color: rgb(229, 82, 82);
+    transition: 0.2s;
+}
+
+.buscaForm {
+    width: 30rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+
+.buscaForm:focus {
+    outline: none;
+    border: 3px solid rgb(138, 134, 134);
+}
+
+.botao1Form {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: none;
+    height: 3rem;
+    width: 10rem;
+}
+
+.botao1Form:hover{
+    background-color: rgb(228, 60, 60);
+}
+
+.botao1Form:focus {
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.botao2Form {
+    background-color: rgb(46, 43, 43);
+    color: white;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    border: none;
+    height: 3rem;
+}
+
+.botao2Form:hover {
+    background-color: rgb(80, 76, 76);
+}
+
+.botao2Form:focus {
+    outline: none;
+    border: 2px solid rgb(178, 187, 221);
+}
+/* Header Fim */
+
+/* Main Início */
+.main {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.containerMain {
+    text-align: center;
+}
+
+.carnesExoticas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.carnesNobres {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCarne {
+    width: 40rem;
+    height: 30rem;
+}
+
+
+.carousel-div {
+    width: 160rem;
+    height: 50rem;
+    margin-bottom: 8rem;
+    margin-top: 22rem;
+    background-color: #da584f;
+}
+
+.carousel-item img {
+    height: 50rem;
+    width: 40rem;
+    
+}
+
+.w-100 { /* tamanho da imagem banner */
+    width: 160rem!important;
+    left: 0rem;
+    margin-left: 0rem;
+    
+}
+
+.w-100:hover {
+    cursor: pointer;
+}
+
+.carousel-caption {
+    top: 1rem;
+}
+
+.carousel-control-next {
+    left: 138rem;
+    width: 10rem;
+}
+
+.carousel-control-prev {
+    left: 10rem;
+    width: 10rem;
+}
+
+.carousel-control-next-icon {
+    background-image: url('svg/arrow-right.svg');
+    width: 8rem;
+    height: 8rem;
+    display: none;    
+}
+
+.carousel-control-prev-icon {
+    background-image: url('svg/arrow-left.svg');
+    width: 8rem;
+    height: 8rem;
+    display: none;
+}
+
+.carousel-indicators {
+    top: 55rem;
+    z-index: 0;
+}
+
+.carousel-indicators .active {
+    background-color: rgb(235, 73, 73);
+    width: 30rem;
+}
+
+
+.carousel-indicators li {
+    height: 2rem;
+    width: 30rem;
+    background-color: rgb(193, 191, 191);
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+
+.quemSomos {
+   width: 60rem;
+}
+
+.quemSomosDiv {
+    background-color: rgb(235, 73, 73);
+    height: 50rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.localizacao p {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+.faleConosco h3, p {
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.faleConosco {
+    border: 1px solid red;
+}
+/* Main Fim */
+
+/* Footer Início */
+
+
+
+.funcionamento h3, p {
+    margin-bottom: 3rem;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.formulario {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputMensagem {
+    height: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#inputNome, #inputEmail, #inputTelefone{
+    width: 50rem;
+    margin-bottom: 3rem;
+}
+
+#inputMensagem {
+    width: 50rem;
+}
+
+.funcionamento {
+    margin-top: 5rem;
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(imagens/rodapé/rodape.png);
+    height: 40rem;
+    background-repeat: no-repeat;
+}
+
+
+.redesSociais {
+   display: flex;
+   margin-top: 20rem;
+
+}
+
+.contato h2 {
+    font-size: 4rem;
+}
+
+.localizacao h2 {
+    font-size: 4rem;
+}
+
+.icone1, .icone2, .icone3 {
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+}
+
+.icones h2 {
+    color: white;
+}
+
+.divIcones {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+/* Footer Fim */
+
+
+
+/* Radio button css início*/
+
+.radio-full-container {
+    padding-bottom: 4rem;
+}
+
+.radio-outline {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #898d8c;
+    border-radius: 50%;
+    margin-right: 1rem;
+    padding: 2px;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    position: absolute;
+    left: 42.7rem;
+}
+
+.active-radio{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    background-color: rgb(122, 226, 57);
+}
+
+.radio-container {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 50rem;
+    margin-top: 2rem;
+}
+
+/* Radio button css fim */
+
+/* Dropdown css início */
+
+.container-select {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+.select .title {
+    height: 6rem;
+    margin: 0px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.title h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title img {
+    left: 44rem;
+    height: 3rem;
+}
+
+.title h2, .title img {
+    position: absolute;
+    z-index: 1;
+    padding-top: 1.5rem;
+}
+
+.description p {
+    padding: 0;
+    margin: 0;
+    height: 6rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+
+.description {
+    display: none;
+}
+
+.onfocus {
+    border: 2px solid rgba(238, 53, 46, 0.7);
+    z-index: 2;
+    box-sizing: border-box;
+    color: rgb(238, 53, 46);
+    margin: 0px;
+}
+
+.display-block {
+    display: block;
+}
+
+.active-drop {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    background-color: rgb(238, 53, 46);
+}
+
+.radio-outline-drop {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #898d8c;
+    border-radius: 50%;
+    margin-right: 1rem;
+    padding: 2px;
+    margin-left: 1rem;
+    position: absolute;
+    right: 30rem;
+
+}
+
+.radio-container-drop {
+    display: flex;
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 7px;
+}
+
+
+/* Dropdown css fim */
+
+/* Checkbox css Início */
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 500px;
+}
+
+.checkbox, #todasAsOpcoes {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    position: absolute;
+    z-index: 1;
+    left: 43.5rem;
+}
+
+
+.checkbox.selected {
+    background-color: rgb(238, 53, 46);
+    border: 2px solid rgb(238, 53, 46);
+}
+
+
+.checkbox-description {
+    margin: 0;
+}
+
+.checkbox-description h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.checkbox.selected + .checkbox-description h2 {
+    font-weight: bold;
+    color: rgb(238, 53, 46);
+}
+
+.checkbox img, #todasAsOpcoes img {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+/* Checkbox css fim */
+
