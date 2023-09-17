@@ -144,3 +144,7 @@ preferencias.forEach((elemento) => {
     }
 })
 
+exibirErro(containerRadio, "Selecione pelo menos uma preferência");
+//carne - dropdown.js
+
+exibirErro(containerSelect, "Selecione pelo menos um tipo de carne");
