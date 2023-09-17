@@ -9,16 +9,6 @@ let containerRadio = document.querySelector(".radio-full-container")
 let formulario = document.querySelector("#formulario");
 
 
-function notSubmitFormulario(eventoSubmit) {
-    
-    formulario.addEventListener("submit", function(submit) {
-
-        submit.preventDefault();
-
-    })
-}
-
-notSubmitFormulario()
     
 
 function exibirErro(elemento, mensagem) {
@@ -39,6 +29,7 @@ function removerErro(elemento) {
 }
 
 //nome
+exibirErro(nome, "Digite pelo menos 2 nomes");
 nome.addEventListener("keyup", (keyup) => {
     if(keyup.target.value ==! nome.value.trim() === "" || nome.value.split(" ").length < 2) {
         removerErro(nome);
@@ -66,6 +57,7 @@ nome.addEventListener("focusout", () => {
 })
 
 //email
+exibirErro(email, "Digite um e-mail");
 email.addEventListener("keyup", (keyup) => { 
     if (!keyup.target.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
         removerErro(email);
@@ -93,6 +85,7 @@ email.addEventListener("focusout", () => {
 })
 
 //telefone
+exibirErro(telefone, "Digite um telefone válido");
 telefone.addEventListener("keyup", (keyup) => { 
     telefone.value = telefone.value.replace(/\D/g, ''); // Remove caracteres não numéricos
     if (keyup.target.value.length !== 11) {
@@ -114,8 +107,10 @@ telefone.addEventListener("click", () => {
 })
 
 telefone.addEventListener("focusout", () => {
+    if(telefone.value.length !== 11) { 
         removerErro(telefone);
-        exibirErro(telefone, "Digite um telefone válido");       
+        exibirErro(telefone, "Digite um telefone válido");
+    }   
 })
 
 //preferencias radio
@@ -145,6 +140,35 @@ preferencias.forEach((elemento) => {
 })
 
 exibirErro(containerRadio, "Selecione pelo menos uma preferência");
+
 //carne - dropdown.js
 
 exibirErro(containerSelect, "Selecione pelo menos um tipo de carne");
+
+//mensagem
+
+exibirErro(mensagem, "Digite no mínimo 5 caracteres");
+
+mensagem.addEventListener("keyup", () => {
+    if(mensagem.value.length <= 5) {
+        removerErro(mensagem);
+        exibirErro(mensagem, "Digite no mínimo 5 caracteres");
+    } else {
+        removerErro(mensagem);
+    }
+})
+
+function notSubmitFormulario() {
+    formulario.addEventListener("submit", function(submit) {  
+
+        let getError = document.querySelector(".error");
+
+        if(getError.classList[0] === "error") {       
+            submit.preventDefault();
+        } else {
+            formulario.submit()
+        } 
+    })
+}
+
+notSubmitFormulario()
