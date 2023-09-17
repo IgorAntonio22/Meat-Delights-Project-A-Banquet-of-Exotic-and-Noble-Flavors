@@ -297,14 +297,11 @@ header {
 }
 
 .pref {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     font-size: 3rem;
 }
 
-.funcionamento h3, p {
-    margin-bottom: 3rem;
-}
 
 .contato {
     display: flex;
@@ -312,8 +309,9 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: rgb(235, 73, 73);
+    color: white;
 }
-
 
 .formulario {
     position: relative;
@@ -326,7 +324,7 @@ header {
 
 #inputNome, #inputEmail, #inputTelefone{
     width: 60rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 #inputMensagem {
@@ -339,6 +337,13 @@ header {
 
 .funcionamento {
     margin-top: 5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.funcionamento h2 {
+    font-size: 2.5rem;
 }
 
 .localizacao {
@@ -360,14 +365,6 @@ footer {
     background-repeat: no-repeat;
 }
 
-
-.redesSociais {
-   display: flex;
-   margin-top: 20rem;
-
-}
-
-
 .localizacao h2 {
     font-size: 4rem;
 }
@@ -385,10 +382,27 @@ footer {
 .divIcones {
     display: flex;
     justify-content: space-evenly;
-
 }
 
+.divIcones img {
+    width: 3rem;
+    padding-top: 3rem;
+}
 
+.rodape {
+    margin-top: 15rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.redesSociais {
+    padding-top: 6rem;
+}
+
+.redesSociais h2 {
+    font-size: 2.5rem;
+}
 /* Footer Fim */
 
 
@@ -406,7 +420,7 @@ footer {
 .radio-outline {
     width: 2rem;
     height: 2rem;
-    border: 2px solid #898d8c;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     padding: 2px;
     margin-top: 1.5rem;
@@ -508,10 +522,10 @@ footer {
 }
 
 .onfocus {
-    border: 2px solid rgba(238, 53, 46, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.7);
     z-index: 2;
     box-sizing: border-box;
-    color: rgb(238, 53, 46);
+    color: rgb(255, 255, 255);
     margin: 0px;
 }
 
@@ -524,13 +538,13 @@ footer {
     height: 1.5rem;
     border-radius: 50%;
     margin-right: 1rem;
-    background-color: rgb(238, 53, 46);
+    background-color: rgb(255, 255, 255);
 }
 
 .radio-outline-drop {
     width: 1.5rem;
     height: 1.5rem;
-    border: 2px solid #898d8c;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     margin-right: 1rem;
     padding: 2px;
@@ -599,7 +613,7 @@ footer {
 .checkbox, #todasAsOpcoes {
     width: 25px;
     height: 25px;
-    border: 2px solid #a1a1a1;
+    border: 2px solid white;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -619,8 +633,8 @@ footer {
 }
 
 .checkbox.selected {
-    background-color: rgb(238, 53, 46);
-    border: 2px solid rgb(238, 53, 46);
+    background-color: rgb(122, 226, 57);
+    border: 2px solid white;
 }
 
 
@@ -633,10 +647,10 @@ footer {
     font-weight: bold;
 }
 
-.checkbox.selected + .checkbox-description h2 {
+/* .checkbox.selected + .checkbox-description h2 {
     font-weight: bold;
-    color: rgb(238, 53, 46);
-}
+    color: rgb(122, 226, 57);
+} */
 
 .checkbox img, #todasAsOpcoes img {
     display: none;
@@ -649,6 +663,7 @@ footer {
 .botaoEnviar {
     margin-top: 1rem;
     width: 6rem;
+    margin-bottom: 2rem;
 }
 
 /* Checkbox css fim */

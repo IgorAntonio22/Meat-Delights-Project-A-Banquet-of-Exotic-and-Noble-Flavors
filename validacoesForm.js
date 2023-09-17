@@ -14,7 +14,7 @@ let formulario = document.querySelector("#formulario");
 function exibirErro(elemento, mensagem) {
     let error = document.createElement("p");
     error.className = "error";
-    error.style.color = "red";
+    error.style.color = "white";
     error.style.marginBottom = "2rem";
     error.style.padding = "0px";
     error.innerText = mensagem;
