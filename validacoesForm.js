@@ -79,7 +79,7 @@ email.addEventListener("click", () => {
 email.addEventListener("focusout", () => {
     if(!email.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
         removerErro(email);
-        exibirErro(email, "Digite um e-mail válido:");
+        exibirErro(email, "Digite um e-mail válido");
         
     }
 })

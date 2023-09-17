@@ -275,25 +275,32 @@ header {
     flex-direction: column;
 }
 
+
+/* Main Fim */
+
+/* Footer Início */
+
 .localizacao p {
     font-weight: bold;
     font-size: 2rem;
 }
 
 
-.faleConosco h3, p {
-    margin-bottom: 2rem;
+.faleConosco p {
+    margin-bottom: 1rem;
     padding: 2rem;
 }
 
 .faleConosco {
-
+    width: 80rem;
+    
 }
-/* Main Fim */
 
-/* Footer Início */
-
-
+.pref {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
 
 .funcionamento h3, p {
     margin-bottom: 3rem;
@@ -316,19 +323,18 @@ header {
     align-items: center;
 }
 
-#inputMensagem {
-    height: 10rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
 
 #inputNome, #inputEmail, #inputTelefone{
-    width: 50rem;
-    margin-bottom: 3rem;
+    width: 60rem;
+    margin-bottom: 1.5rem;
 }
 
 #inputMensagem {
-    width: 50rem;
+    width: 60rem;
+    resize: none;
+    height: 10rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
 }
 
 .funcionamento {
@@ -361,9 +367,6 @@ footer {
 
 }
 
-.contato h2 {
-    font-size: 4rem;
-}
 
 .localizacao h2 {
     font-size: 4rem;
@@ -393,7 +396,11 @@ footer {
 /* Radio button css início*/
 
 .radio-full-container {
-    padding-bottom: 4rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: row;
+    width: 60rem;
+    margin-left: 8rem;
 }
 
 .radio-outline {
@@ -401,12 +408,10 @@ footer {
     height: 2rem;
     border: 2px solid #898d8c;
     border-radius: 50%;
-    margin-right: 1rem;
     padding: 2px;
-    margin-left: 1rem;
     margin-top: 1.5rem;
     position: absolute;
-    left: 42.7rem;
+    bottom: -3rem;
 }
 
 .active-radio{
@@ -419,13 +424,30 @@ footer {
 
 .radio-container {
     display: flex;
-    position: relative;
     font-weight: bold;
-    font-size: 2rem;
-    width: 50rem;
+    position: relative;
+    font-size: 1.7rem;
+    width: 20rem;
     margin-top: 2rem;
+    margin: 0px;
 }
 
+.ambas {
+    margin-left: 3.5rem;
+}
+
+.ambas .radio-outline {
+    left: 2rem;
+  
+}
+
+.tradicionais .radio-outline {
+    left: 6rem;
+}
+
+.exoticas .radio-outline {
+    left: 5rem;
+}
 /* Radio button css fim */
 
 /* Dropdown css início */
@@ -433,11 +455,18 @@ footer {
 .container-select {
     display: flex;
     flex-direction: column;
-    width: 50rem;
+    width: 60rem;
+    margin-bottom: 2rem;
 }
 
 .title:hover {
     cursor: pointer;
+}
+
+.carneFavorita {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
 }
 
 .select .title {
@@ -456,7 +485,7 @@ footer {
 }
 
 .title img {
-    left: 44rem;
+    left: 57rem;
     height: 3rem;
 }
 
@@ -523,19 +552,54 @@ footer {
 
 /* Checkbox css Início */
 
+.comunicacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2Comunicacao {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.checkboxes-container {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
 .checkbox-container {
     display: flex;
     align-items: center;
     cursor: pointer;
     margin-bottom: 3rem;
     position: relative;
-    width: 500px;
+    width: 20rem;
 }
+
+.h2TodosOsMeios {
+    margin-left: 5rem;
+}
+
+.h2Email {
+    margin-left: 7rem;
+}
+
+.h2Sms{
+    margin-left: 6.5rem;
+}
+
+.containerEmail .checkbox {
+    margin-left: 1.5rem;
+}
+
 
 .checkbox, #todasAsOpcoes {
     width: 25px;
     height: 25px;
-    border: 2px solid #ccc;
+    border: 2px solid #a1a1a1;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -545,9 +609,14 @@ footer {
 .checkbox {
     position: absolute;
     z-index: 1;
-    left: 43.5rem;
+    left: 7rem;
+    top: 3rem;
+    margin-top: 1rem;
 }
 
+#todasAsOpcoes {
+    left: 9.5rem;
+}
 
 .checkbox.selected {
     background-color: rgb(238, 53, 46);
@@ -560,7 +629,7 @@ footer {
 }
 
 .checkbox-description h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
@@ -575,6 +644,11 @@ footer {
 
 .display-block {
     display: block;
+}
+
+.botaoEnviar {
+    margin-top: 1rem;
+    width: 6rem;
 }
 
 /* Checkbox css fim */

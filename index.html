@@ -111,36 +111,35 @@
         <section class="contato">
           <img src="imagens/titulos/contato.png" alt="Contato">
           <div class="faleConosco">
-            <h3>Fale Conosco</h3>
             <p>Preencha o formulário ou envie sua mensagem diretamente para o email: deliciasdacarne@gmail.com</p>
             <form action="" class="formulario" id="formulario">
               <input type="text" id="inputNome" placeholder="Nome">
               <input type="text" id="inputEmail" placeholder="E-mail">
               <input type="text" id="inputTelefone" placeholder="Telefone">
-              <h3 class="pref">Preferências</h3>
+              <h2 class="pref">Preferências</h2>
               <div class="radio-full-container">
-                <div class="radio-container">
+                <div class="radio-container exoticas">
                     <span>Carnes Exóticas</span>
                     <div class="radio-outline">
                         <div class="radio"></div>
                     </div>
                 </div>
         
-                <div class="radio-container">
+                <div class="radio-container tradicionais">
                     <span>Carnes Tradicionais</span>
                     <div class="radio-outline">
                         <div class="radio"></div>
                     </div>
                 </div>
                 
-                <div class="radio-container">
+                <div class="radio-container ambas">
                     <span>Ambas</span>
                     <div class="radio-outline">
                         <div class="radio"></div>
                     </div>
                 </div>
               </div>
-              <h3 class="carneFavorita">Tipo de carne favorita</h3>
+              <h2 class="carneFavorita">Tipo de carne favorita</h2>
               <div class="container-select">
                 <div>
                     <div class="select">
@@ -278,23 +277,27 @@
                     </div>
                 </div>    
               </div>
-              <h3 class="carneFavorita">Receber comunicações</h3>
-              <div class="checkbox-container">
-                <div id="todasAsOpcoes" class="checkbox"><img src="../svg/check2.svg"></div>
-                <div class="checkbox-description"><h2>Todos os meios</h2></div>
+              <div class="comunicacoes">
+                <h2 class="h2Comunicacao">Receber comunicações</h2>
+                <div class="checkboxes-container">
+                  <div class="checkbox-container">
+                    <div id="todasAsOpcoes" class="checkbox"><img src="../svg/check2.svg"></div>
+                    <div class="checkbox-description"><h2 class="h2TodosOsMeios">Todos os meios</h2></div>
+                  </div>
+            
+                  <div class="checkbox-container  containerEmail">
+                    <div class="checkbox"><img src="../svg/check2.svg"></div>
+                    <div class="checkbox-description"><h2 class="h2Email">E-mail</h2></div>
+                  </div>
+            
+                  <div class="checkbox-container">
+                    <div class="checkbox"><img src="../svg/check2.svg"></div>
+                    <div class="checkbox-description"><h2 class="h2Sms">SMS</h2></div>
+                  </div>
+                </div>
+                <textarea id="inputMensagem" placeholder="Mensagem"></textarea>
+                <input type="submit" value="Enviar" class="botaoEnviar">
               </div>
-        
-              <div class="checkbox-container">
-                <div class="checkbox"><img src="../svg/check2.svg"></div>
-                <div class="checkbox-description"><h2>E-mail</h2></div>
-              </div>
-        
-              <div class="checkbox-container">
-                <div class="checkbox"><img src="../svg/check2.svg"></div>
-                <div class="checkbox-description"><h2>SMS</h2></div>
-              </div>
-              <textarea id="inputMensagem" placeholder="Mensagem"></textarea>
-              <input type="submit" value="Enviar">
             </form>
           </div>
           <div class="funcionamento">
