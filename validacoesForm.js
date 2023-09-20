@@ -7,7 +7,17 @@ let carne = document.querySelectorAll(".radio-outline-drop");
 let mensagem = document.getElementById("inputMensagem");
 let containerRadio = document.querySelector(".radio-full-container")
 let formulario = document.querySelector("#formulario");
+let preencherFormButton = document.querySelector(".preencherForm");
 
+preencherFormButton.onclick = function() {
+    if(preencherFormButton.innerText === "Preencher Formulário") { 
+        formulario.classList.toggle("display-none");
+        preencherFormButton.innerText = "Cancelar Preenchimento"
+    } else if (preencherFormButton.innerText === "Cancelar Preenchimento") {
+        formulario.classList.toggle("display-none");
+        preencherFormButton.innerText = "Preencher Formulário"
+    }
+}
 
     
 
@@ -40,13 +50,6 @@ nome.addEventListener("keyup", (keyup) => {
     }
 })
 
-nome.addEventListener("click", () => {
-    if(nome.value === "") {
-        removerErro(nome);
-        exibirErro(nome, "Digite pelo menos 2 nomes");
-        
-    }
-})
 
 nome.addEventListener("focusout", () => {
     if(nome.value ==! nome.value.trim() === "" || nome.value.split(" ").length < 2) {
@@ -57,7 +60,7 @@ nome.addEventListener("focusout", () => {
 })
 
 //email
-exibirErro(email, "Digite um e-mail");
+exibirErro(email, "Digite um e-mail válido");
 email.addEventListener("keyup", (keyup) => { 
     if (!keyup.target.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
         removerErro(email);
@@ -68,13 +71,6 @@ email.addEventListener("keyup", (keyup) => {
     }
 }) 
 
-email.addEventListener("click", () => {
-    if(email.value === "") {
-        removerErro(email);
-        exibirErro(email, "Digite um e-mail");
-        
-    }
-})
 
 email.addEventListener("focusout", () => {
     if(!email.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
