@@ -263,7 +263,10 @@ header {
 }
 
 .quemSomosDiv {
-    background-color: rgb(235, 73, 73);
+    background-image: url(imagens/quemSomos/quemSomos.png);
+    background-repeat: no-repeat;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
     height: 50rem;
     margin-top: 6rem;
     display: flex;
@@ -272,6 +275,8 @@ header {
     text-align: center;
     flex-direction: column;
 }
+
+
 .item {
     width: 40rem;
 }
@@ -310,7 +315,8 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgb(235, 73, 73);
+    background-image: url(imagens/contato/contato.png);
+    background-repeat: no-repeat;
     color: white;
 }
 
