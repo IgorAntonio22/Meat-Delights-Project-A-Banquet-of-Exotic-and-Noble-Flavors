@@ -1,0 +1,81 @@
+.container-select {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+.select .title {
+    height: 60px;
+    margin: 0;
+    display: flex;
+    position: relative;
+}
+
+.title h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.title img {
+    left: 440px;
+    height: 30px;
+}
+
+.title h2, .title img {
+    position: absolute;
+    z-index: 1;
+    padding-top: 15px;
+}
+
+.description p {
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.description {
+    display: none;
+}
+
+.onfocus {
+    border: 4px solid rgba(76, 165, 203,0.5);
+}
+
+.display-block {
+    display: block;
+}
+
+.active-drop {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgb(124, 218, 194);
+}
+
+.radio-outline-drop {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #898d8c;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 2px;
+    margin-left: 10px;
+    position: absolute;
+    right: 300px;
+
+}
+
+.radio-container-drop {
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    margin-top: 7px;
+}
