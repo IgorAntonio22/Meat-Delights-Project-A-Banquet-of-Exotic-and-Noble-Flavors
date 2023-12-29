@@ -1,5 +1,5 @@
 # Projeto Delicias Da Carne 
-Projeto De Bloco (1º Semestre) -  Desenvolvido no bloco de entrada (HTML, CSS & JAVASCRIPT) do Instituto Infnet
+Projeto De Bloco (1º Semestre) -  Desenvolvido no bloco de entrada (HTML, CSS e JAVASCRIPT) do Instituto Infnet
 
 Site: [Delicias Da Carne](https://projeto-delecias-da-carne-atualizado.vercel.app)
 
