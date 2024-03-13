@@ -7,11 +7,10 @@ Requisitos: [Clique aqui para acessar](https://drive.google.com/drive/u/0/folder
 
 Preview: 
 
-![image](https://github.com/IgorAntonio22/Projeto-Delicias-Da-Carne-Infnet/assets/98776749/94fbbbd0-1ba3-440f-848e-9d4a1e24c15c)
+![image](https://github.com/IgorAntonio22/Projeto-Delicias-Da-Carne-Infnet/assets/98776749/59a3e85b-e705-496f-859a-56e8e4fdb20a)
+![image](https://github.com/IgorAntonio22/Projeto-Delicias-Da-Carne-Infnet/assets/98776749/b032b285-6b55-4bab-a7fe-c7fb44eaa827)
+![image](https://github.com/IgorAntonio22/Projeto-Delicias-Da-Carne-Infnet/assets/98776749/73484922-e1d8-4be6-b7ca-776f412c5aac)
+![image](https://github.com/IgorAntonio22/Projeto-Delicias-Da-Carne-Infnet/assets/98776749/94b4c6f4-9b91-45f8-a12e-3c63e9aaf5e0)
 
-![image](https://github.com/IgorAntonio22/Projeto-Delicias-Da-Carne-Infnet/assets/98776749/0f25dcc4-4a5d-4643-a3aa-8b5707e04ea9)
-
-![image](https://github.com/IgorAntonio22/Projeto-Delicias-Da-Carne-Infnet/assets/98776749/41f10f04-8f4e-46c4-8b6c-8f42fcc3e72b)
 
 
-![image](https://github.com/IgorAntonio22/Projeto-Delicias-Da-Carne-Infnet/assets/98776749/b621e181-57fe-4b48-b988-e9fada216cab)
