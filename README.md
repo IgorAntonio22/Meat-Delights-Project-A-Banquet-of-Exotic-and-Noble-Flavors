@@ -1,9 +1,8 @@
-# Projeto Delicias Da Carne 
-Projeto De Bloco (1º Semestre) -  Desenvolvido no bloco de entrada (HTML, CSS e JAVASCRIPT) do Instituto Infnet
+# Projeto Delicias Da Carne (Meat Delights Project)
 
-Site: [Delicias Da Carne](https://projeto-delecias-da-carne-atualizado.vercel.app)
+Site (Website): [Delicias Da Carne](https://projeto-delecias-da-carne-atualizado.vercel.app)
 
-Requisitos: [Clique aqui para acessar](https://drive.google.com/drive/u/0/folders/1g0cw4ko85FVL3flWXiAkWsztmnwzXrDA)
+Requisitos (Requirements): [Clique aqui para acessar](https://drive.google.com/drive/u/0/folders/1g0cw4ko85FVL3flWXiAkWsztmnwzXrDA)
 
 Preview: 
 
